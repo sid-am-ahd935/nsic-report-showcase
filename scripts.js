@@ -24,9 +24,10 @@ const handleOnMove = e => {
   }, { duration: 1200, fill: "forwards" });
 
   for(const image of track.getElementsByClassName("image")) {
-    image.animate({
-      objectPosition: `${100 + nextPercentage}% center`
-    }, { duration: 1200, fill: "forwards" });
+    // image.animate({
+    //   objectPosition: `${100 + nextPercentage}% center`
+    // }, { duration: 1200, fill: "forwards" });
+    image.style.objectPosition = "center center";
   }
 }
 
